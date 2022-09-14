@@ -2,29 +2,341 @@
 @import url(“https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap’)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 420px) {
-
+* {
+   box-sizing: border-box; 
+   font-family: 'Roboto' sans-serif;
+   margin: 0;
+   padding: 0;
 }
 
-@media (min-width: 1280px) {
+
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    max-width: 1024px; 
+    background: url(/c/CursoCTD/front_end1/Checkpoint.01-Frontend.1/img/body.png);
+    width: 100%;
+    
     
 }
+
+
+header {
+    font-family: 'Roboto';
+    background-color: #2064da;
+    border: 2px solid #000000;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    padding: 20px 20px 20px 20px; 
+    position: unset;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    z-index: 2;
+    
+}
+   
+
+.banner {
+    display: none;
+}
+
+
+.logo_moz {
+    position: unset;
+    width: 340px;
+    height: 120px;
+    left: 40px;
+    top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_moz img {
+    width: 70%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   
+
+
+header nav {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+
+nav a {
+    width: 197px;
+    display: block;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+main {
+    width: 100px;
+    /*flex: auto;*/
+    padding: 0.8em 0.3em;
+    row-gap: 80px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    max-width: 1024px;
+    align-self: center;
+
+
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+
+}
+
+
+h2{
+    padding: 35px;
+}
+
+.profile img{
+    width: 400px;
+    height: auto;
+ 
+}
+
+
+#home_video{
+    text-align: left;
+    padding: 30px;
+}
+
+
+.video iframe{
+    border-radius: 20px 20px;
+    width:400px;
+    height:534px;
+    padding-bottom: 60px;
+
+}
+
+.video{
+    text-align: center;
+}
+
+
+.card{
+    width: 400px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:#f3f3f3 ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px 16px 16px 16px ;
+
+}
+
+.card img{
+    border-radius: 16px 16px 0 0;
+    filter:drop-shadow( 0px 4px 4px rgba(0,0,0,25))
+
+}
+    
+
+.card p{
+
+    padding: 0 30px;
+}
+
+
+.card a{
+display: block;
+margin: 100px 23px;
+padding: 16px 30px;
+color: black;
+text-decoration: none;
+background-color:#00669F;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color:#C4C4C4;;
+    padding: 16px 24px;
+    color: #FFF9F9;
+    align-items: center;
+}
+
+footer img {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+   
+}
+
+footer a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+
+a:link {
+    color: #000000;
+    
+   }
+   
+   a:hover {
+    color: #F00;
+    background-color: black;
+   }
+
+@media (min-width: 1280px) {
+    header nav {
+        justify-content: flex-end;
+        flex-direction: row;
+        align-content: space-between;
+    }
+}
+
+
+
+@media(min-width:1024px){
+    main{
+        gap:20px;
+        width: 100vw;
+        flex-direction: column;
+        padding-bottom: 10px;
+        padding-left: 10%;
+        align-self: center;
+        position: relative;
+        position: relative; 
+
+
+    }
+
+    header{
+        font-family: 'roboto';
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        height: 150px;
+        background-color: #2064da;
+        align-items: center;
+        padding: 20px 20px 20px 20px;
+        box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+        
+     
+    }
+
+    .card {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .img_logo_moz img {
+        width: 100px;
+        border-radius: 20px;
+        margin-left: 150px;
+    }
+
+    nav  a{
+       
+        width: 150px;
+        display: block;
+        border:1px solid black;
+        border-radius: 20px;
+         color: black;
+        text-decoration: none;
+              
+      
+    }
+
+   
+    nav{
+        display:flex;
+        flex-direction: row;
+       
+    }
+
+    #home_curiosidade{
+        text-align:left;
+        padding: 20px;
+    }
+
+    #home_video{
+        text-align: left;
+        padding: 30px;
+    }
+
+  
+
+    .banner {
+        display: block;
+        width: 100vp;
+        padding: 10px;
+        margin: 0;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+    .banner img{
+        width: 100%;
+    }
+
+   
+
+    .video iframe{
+        width:76%;
+        height:534px;
+        border-radius: 20px 20px 20px 20px;
+        margin-bottom: 60px;
+        padding-left: 30px;
+        justify-content: center;
+        align-items: flex-end;
+        
+       
+    }
+
+    footer{
+        width: 100vw;
+    }
+
+}
+
+
+
+
+
+ 
+
+
